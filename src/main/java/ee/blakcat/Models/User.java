@@ -1,26 +1,34 @@
 package ee.blakcat.Models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import java.util.ArrayList;
-
+import java.util.UUID;
+@Table (name = "user_data")
+@Entity
 public class User {
-    private String login, password, nameSurname, id, address;
-    private ArrayList <Product> products;
+    @Id
+    private String id;
+    private String login, password, nameSurname, address;
 
-    public User(String login, String password, String nameSurname, String id, String address) {
+
+
+    public User(String id, String login, String password, String nameSurname, String address) {
+        this.id = id;
         this.login = login;
         this.password = password;
         this.nameSurname = nameSurname;
-        this.id = id;
         this.address = address;
-        this.products = new ArrayList<>();
     }
 
     public User(String login, String password, String nameSurname, String address){
+        this.id = UUID.randomUUID().toString();
         this.login = login;
         this.password = password;
         this.nameSurname = nameSurname;
         this.address = address;
-        this.products=new ArrayList<>();
+
     }
 
     public User() {
@@ -66,22 +74,17 @@ public class User {
         this.address = address;
     }
 
-    public ArrayList<Product> getProducts() {
-        return products;
-    }
 
-    public void setProducts(ArrayList<Product> products) {
-        this.products = products;
-    }
+
 
     @Override
     public String toString() {
         return "User{" +
                 "login='" + login + '\'' +
+                ", password='" + password + '\'' +
                 ", nameSurname='" + nameSurname + '\'' +
                 ", id='" + id + '\'' +
                 ", address='" + address + '\'' +
-                ", products=" + products +
                 '}';
     }
 }

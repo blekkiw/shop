@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Set;
 
@@ -19,23 +21,29 @@ public UserService userService;
         this.userService = userService;
     }
 
-    public User getByID(String s) {
-        return null;
-    }
+    @GetMapping ("/getuserbyid")
 
-    public User save(User ent) {
-        return null;
-    }
-
-    public Set<User> getAll() {
-        return null;
-    }
-
-    @GetMapping ("/user")
-    public String getTest (Model model) {
-    User user = new User("login","pass","name","addr");
+    @Override
+    public String getByID(@RequestParam ("id") String s, Model model) {
+    User user = userService.getByID(s);
     model.addAttribute("user", user);
-        System.out.println("Works!");
-    return "oneusertest";
+        return "oneuser";
+    }
+
+    @PostMapping ("/saveuser")
+    public String save (@RequestParam ("login") String login, @RequestParam ("password") String password, @RequestParam ("nameSurname") String nameSurname,
+           @RequestParam ("address") String address , Model model) {
+    User user = new User(login,password,nameSurname,address);
+    userService.save(user);
+    model.addAttribute("user", user);
+        return "oneuser";
+    }
+
+    @GetMapping ("/getall")
+    @Override
+    public String getAll(Model model) {
+    final Set<User> allUsers = userService.getAll();
+    model.addAttribute("users", allUsers);
+        return "getallusers";
     }
 }

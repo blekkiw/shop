@@ -1,4 +1,4 @@
-package ee.blakcat.Start;
+package ee.blakcat;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

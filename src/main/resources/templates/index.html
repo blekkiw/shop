@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ShopOne</title>
+    <title> Save user</title>
+    <form action="/saveuser" method="post">
+        <label for="login">login: </label> <input id="login" name="login" type="text"> </br>
+        <label for="password">password: </label> <input id="password" name="password" type="text"></br>
+        <label for="nameSurname">nameSurname: </label> <input id="nameSurname" name="nameSurname" type="text"></br>
+        <label for="address">address: </label> <input id="address" name="address" type="text"></br>
+        <input type="submit" value="Save">
+    </form>
 </head>
 <body>
 

@@ -1,15 +1,12 @@
 package ee.blakcat.Services;
 
-import com.google.common.base.Strings;
 import ee.blakcat.Models.User;
 import ee.blakcat.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Set;
-
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl extends BaseAbstractService <UserRepository, User, String> implements UserService {
     public UserRepository userRepository;
 
     @Autowired
@@ -17,16 +14,5 @@ public class UserServiceImpl implements UserService {
         this.userRepository = userRepository;
     }
 
-    public User getByID(String s) {
-        if (Strings.isNullOrEmpty(s)) throw  new RuntimeException("String Empty");
-        return userRepository.getByID(s);
-    }
 
-    public User save(User ent) {
-        return userRepository.save(ent);
-    }
-
-    public Set<User> getAll() {
-        return userRepository.getAll();
-    }
 }

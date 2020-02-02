@@ -2,53 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f208f1f-04d8-43b6-b266-f847ea2e5e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ShopOne.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/BaseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepositoryToMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepositoryToPSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Start/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/getallusers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/oneusertest.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/BaseController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/ProductController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserControllerToWeb.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/BaseRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/ProductRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepositoryToMap.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepositoryToPSQL.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/BaseService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/ProductService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Start/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/getallusers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/templates/oneusertest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseAbstractService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/BaseController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/BaseRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepositoryToMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepositoryToPSQL.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Start/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/getallusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/getallusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/oneusertest.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/oneuser.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/BaseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserControllerToWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserControllerToWeb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/BaseRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepositoryToMap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepositoryToPSQL.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/BaseService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Start/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/getallusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/getallusers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/oneusertest.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,13 +48,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="HTML File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -84,6 +80,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../dream-vending-machine" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -93,16 +90,23 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/template" />
     </key>
   </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn dependency:tree" />
+    </option>
+  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ee.blakcat.Start.Main" />
+      <option name="MAIN_CLASS_NAME" value="ee.blakcat.Main" />
       <module name="ShopOne" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ee.blakcat.Start.*" />
+          <option name="PATTERN" value="ee.blakcat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,7 +143,27 @@
       <option name="presentableId" value="Default" />
       <updated>1578602680040</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1578730634271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578730634271</updated>
+    </task>
+    <task id="LOCAL-00002" summary="12">
+      <created>1578730768944</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578730768944</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="12" />
+    <option name="LAST_COMMIT_MESSAGE" value="12" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="684" key="#Inspections" timestamp="1578688821843">
@@ -150,78 +174,94 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="590" y="215" width="800" height="736" key="#Intentions/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578688867625" />
-    <state x="803" y="272" width="544" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1578690433066">
+    <state x="803" y="272" width="544" height="583" key="#com.intellij.ide.util.MemberChooser" timestamp="1580589079344">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="803" y="272" width="544" height="576" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578690433066" />
-    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2" timestamp="1578730634134">
+    <state x="803" y="272" width="544" height="583" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580589079344" />
+    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580589858275">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1578730634134" />
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578729358363">
+    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580589858275" />
+    <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580583377943">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1578729358363" />
-    <state width="1804" height="340" key="GridCell.Tab.0.bottom" timestamp="1578729362406">
+    <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580583377943" />
+    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2" timestamp="1578730768872">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578694134551" />
-    <state width="1804" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.0.center" timestamp="1578729362405">
+    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1578730768872" />
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578739448854">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578694134551" />
-    <state width="1804" height="340" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362405" />
-    <state width="1804" height="340" key="GridCell.Tab.0.left" timestamp="1578729362405">
+    <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1578739448854" />
+    <state width="1804" height="340" key="GridCell.Tab.0.bottom" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578694134551" />
-    <state width="1804" height="340" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362405" />
-    <state width="1804" height="340" key="GridCell.Tab.0.right" timestamp="1578729362406">
+    <state width="1804" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
+    <state width="1804" height="275" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578836239248" />
+    <state width="1804" height="340" key="GridCell.Tab.0.center" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578694134551" />
-    <state width="1804" height="340" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1578729362406">
+    <state width="1804" height="340" key="GridCell.Tab.0.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
+    <state width="1804" height="275" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578836239248" />
+    <state width="1804" height="340" key="GridCell.Tab.0.left" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
+    <state width="1804" height="340" key="GridCell.Tab.0.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
+    <state width="1804" height="275" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578836239248" />
+    <state width="1804" height="340" key="GridCell.Tab.0.right" timestamp="1580591054841">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.0.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
+    <state width="1804" height="275" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578836239248" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1580591054842">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054842" />
     <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1578729362406">
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
     <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1578729362406">
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
     <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1578729362406">
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1580591054841">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580591054841" />
     <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1578688741709">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1578688741709" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578730773144">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1578730773144" />
+    <state x="616" y="193" width="748" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580576407068">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="616" y="193" width="748" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580576407068" />
     <state x="304" y="252" width="1372" height="610" key="new project wizard" timestamp="1578726100434">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="304" y="252" width="1372" height="610" key="new project wizard/70.27.1850.1053@70.27.1850.1053" timestamp="1578726100434" />
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1580577511873">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580577511873" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseAbstractService.java</url>
+          <line>28</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java</url>
-          <line>17</line>
-          <properties class="ee.blakcat.Controllers.UserControllerToWeb" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

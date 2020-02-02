@@ -1,10 +1,11 @@
 package ee.blakcat.Controllers;
 
+import org.springframework.ui.Model;
+
 import java.util.ArrayList;
 import java.util.Set;
 
 public interface BaseController<T, ID> {
-    T getByID (ID id);
-    T save (T ent);
-    Set<T> getAll ();
+    String getByID (ID id, Model model);
+    String getAll (Model model);
 }
