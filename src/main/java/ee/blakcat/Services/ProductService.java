@@ -1,4 +1,6 @@
 package ee.blakcat.Services;
 
-public interface ProductService {
+import ee.blakcat.Models.Product;
+
+public interface ProductService extends BaseService <Product, String> {
 }

@@ -1,5 +1,6 @@
 package ee.blakcat.Services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.CrudRepository;
 
 import java.io.Serializable;
@@ -12,11 +13,12 @@ public abstract class BaseAbstractService <
         , ENT, ID extends Serializable>
         implements BaseService <ENT, ID> {
 
+    @Autowired
 protected REPOSITORY repository;
 
 
     @Override
-    public ENT getByID(ID s) {
+    public ENT findById(ID s) {
         ENT entity = repository.findById(s).get();
         if (Objects.isNull(entity)) {
             throw new RuntimeException("Not found!");
@@ -29,7 +31,7 @@ protected REPOSITORY repository;
         return repository.save(ent);
     }
     @Override
-    public Set<ENT> getAll() {
+    public Set<ENT> findAll() {
         Set<ENT> all = new HashSet<>();
         repository.findAll().forEach(all::add);
         return all;

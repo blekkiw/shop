@@ -1,18 +1,27 @@
 package ee.blakcat.Models;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.ArrayList;
 import java.util.UUID;
 @Table (name = "user_data")
 @Entity
 public class User {
     @Id
     private String id;
-    private String login, password, nameSurname, address;
+    @Column (unique = true)
+    private String login;
+       private String password, nameSurname, address;
+    private Status status;
+    private UserRole userRole;
+    private String session;
 
 
+
+    public void setSession(String session) {
+        this.session = session;
+    }
 
     public User(String id, String login, String password, String nameSurname, String address) {
         this.id = id;
@@ -20,6 +29,8 @@ public class User {
         this.password = password;
         this.nameSurname = nameSurname;
         this.address = address;
+        this.userRole= UserRole.CUSTOMER;
+        this.status= Status.ACTIVE;
     }
 
     public User(String login, String password, String nameSurname, String address){
@@ -28,10 +39,27 @@ public class User {
         this.password = password;
         this.nameSurname = nameSurname;
         this.address = address;
-
+        this.userRole=UserRole.CUSTOMER;
+this.status=Status.ACTIVE;
     }
 
     public User() {
+    }
+
+    public Status getStatus() {
+        return status;
+    }
+
+    public void setStatus(Status status) {
+        this.status = status;
+    }
+
+    public UserRole getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(UserRole userRole) {
+        this.userRole = userRole;
     }
 
     public String getLogin() {
@@ -73,7 +101,9 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
-
+    public String getSession() {
+        return session;
+    }
 
 
 

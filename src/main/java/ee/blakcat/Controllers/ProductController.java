@@ -1,4 +1,6 @@
 package ee.blakcat.Controllers;
 
-public interface ProductController {
+import ee.blakcat.Models.Product;
+
+public interface ProductController extends BaseController <Product, String> {
 }

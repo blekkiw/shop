@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All user</title>
+     <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="products">
+<div  th:each="product : ${products}" >
+   <div class="product">
+  <span>Name: </span>  <h1 th:text = "${product.name}"/> <br>
+   <span>Price: </span> <h2 th:text = "${product.price}"/> <br>
+       <a th:href="'/product/find?id='+${product.id}">See more</a>
+    </div>
+    </div>
+</div>
+</body>
+</html>

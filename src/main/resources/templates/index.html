@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title> Save user</title>
-    <form action="/saveuser" method="post">
-        <label for="login">login: </label> <input id="login" name="login" type="text"> </br>
-        <label for="password">password: </label> <input id="password" name="password" type="text"></br>
-        <label for="nameSurname">nameSurname: </label> <input id="nameSurname" name="nameSurname" type="text"></br>
-        <label for="address">address: </label> <input id="address" name="address" type="text"></br>
-        <input type="submit" value="Save">
-    </form>
+    <title> Welcome!</title>
+    <link rel="stylesheet" href="/css/style.css">
+  
 </head>
 <body>
-
+<h1>WTFF</h1>
+  <a href="user/save.html">New user</a>
+   <a href="user/all">All users</a>
+    <a href="user/find.html">Find users</a>
+    <a href="product/save.html">New product</a>
+    <a href="product/all">All products</a>
+<a href="/loginpage">Login</a>
+    <br>
 </body>
 </html>

@@ -15,4 +15,18 @@ public class UserServiceImpl extends BaseAbstractService <UserRepository, User, 
     }
 
 
+    @Override
+    public User findByLogin(String login) {
+        return userRepository.findByLogin(login);
+    }
+
+    @Override
+    public User findBySession(String session) {
+        return userRepository.findBySession(session);
+    }
+
+    @Override
+    public User findByLoginAdnPassword(String login, String password) {
+        return userRepository.findByLoginAndPassword(login,password);
+    }
 }

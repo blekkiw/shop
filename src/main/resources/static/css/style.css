@@ -1,0 +1,21 @@
+H1 {
+  color: #000080;
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center; 
+}
+.products {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-around;
+    border-style: solid;
+    border-color: azure;
+}
+.product {
+    display: flex;
+    border-style: solid;
+    border-color: aliceblue;
+    margin: 5px;
+    padding: 5px;
+}

@@ -1,5 +1,6 @@
 package ee.blakcat.Controllers;
 
+import com.sun.org.apache.xpath.internal.operations.Mod;
 import ee.blakcat.Models.User;
 import ee.blakcat.Services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,8 +8,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.jws.WebParam;
+import java.util.Collections;
 import java.util.Set;
 
 @Controller
@@ -21,29 +25,35 @@ public UserService userService;
         this.userService = userService;
     }
 
-    @GetMapping ("/getuserbyid")
-
+    @GetMapping ("/user/findid")
     @Override
-    public String getByID(@RequestParam ("id") String s, Model model) {
-    User user = userService.getByID(s);
+    public String findById(@RequestParam ("id") String s, Model model) {
+    User user = userService.findById(s);
     model.addAttribute("user", user);
-        return "oneuser";
+        return "user/one";
     }
 
-    @PostMapping ("/saveuser")
+    @PostMapping ("user/save")
     public String save (@RequestParam ("login") String login, @RequestParam ("password") String password, @RequestParam ("nameSurname") String nameSurname,
            @RequestParam ("address") String address , Model model) {
     User user = new User(login,password,nameSurname,address);
     userService.save(user);
     model.addAttribute("user", user);
-        return "oneuser";
+        return findById(user.getId(), model);
     }
 
-    @GetMapping ("/getall")
+    @RequestMapping("user/all")
     @Override
-    public String getAll(Model model) {
-    final Set<User> allUsers = userService.getAll();
+    public String findAll(Model model) {
+    Set<User> allUsers = userService.findAll();
     model.addAttribute("users", allUsers);
-        return "getallusers";
+        return "user/all";
+    }
+
+    @GetMapping ("/user/findlogin")
+    public String findByLogin (@RequestParam ("login") String login, Model model) {
+    User user = userService.findByLogin(login);
+    model.addAttribute("user", user);
+    return "user/one";
     }
 }

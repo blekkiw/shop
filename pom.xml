@@ -49,7 +49,11 @@
         <artifactId>postgresql</artifactId>
         <version>42.2.9</version>
     </dependency>
-
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-devtools</artifactId>
+        <optional>true</optional>
+    </dependency>
 </dependencies>
     <parent>
         <groupId>org.springframework.boot</groupId>
