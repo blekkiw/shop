@@ -1,7 +1,6 @@
 package ee.blakcat.Models;
 
 import javax.persistence.*;
-import java.io.Serializable;
 import java.util.UUID;
 
 @Entity
@@ -11,18 +10,18 @@ public class Payment{
    private String id;
     @OneToOne(cascade = CascadeType.ALL)
    private User customer;
-   private PaymentStatus paymentStatus;
+   private ProcessStatus processStatus;
 
-    public Payment(String id, User user, PaymentStatus paymentStatus) {
+    public Payment(String id, User user, ProcessStatus processStatus) {
         this.id = id;
         this.customer = user;
-        this.paymentStatus = paymentStatus;
+        this.processStatus = processStatus;
     }
 
     public Payment(User user) {
         this.id= UUID.randomUUID().toString();
         this.customer = user;
-        this.paymentStatus= PaymentStatus.PROCESS;
+        this.processStatus = ProcessStatus.TOPAY;
     }
 
     public Payment() {
@@ -44,11 +43,11 @@ public class Payment{
         this.customer = user;
     }
 
-    public PaymentStatus getPaymentStatus() {
-        return paymentStatus;
+    public ProcessStatus getProcessStatus() {
+        return processStatus;
     }
 
-    public void setPaymentStatus(PaymentStatus paymentStatus) {
-        this.paymentStatus = paymentStatus;
+    public void setProcessStatus(ProcessStatus processStatus) {
+        this.processStatus = processStatus;
     }
 }

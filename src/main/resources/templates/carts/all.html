@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All user</title>
+</head>
+<body>
+<div th:each="cart : ${activecarts}" >
+    <h1 th:text = "${cart.toString()}"/>
+</div>
+<div th:each="cart : ${anothercarts}" >
+    <h1 th:text = "${cart.toString()}"/>
+</div>
+</body>
+</html>

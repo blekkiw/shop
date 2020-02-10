@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Cart</title>
+</head>
+<body>
+<h1 th:if = "${cart.isEmpty()}">Nothing here now....</h1>
+<div th:if = "${!cart.isEmpty()}">
+<h1>Status: </h1><h1 th:text = "${cart.processStatus}"/> <br>
+<h2>Payment status: </h2><h2 th:text = "${cart.payment.getProcessStatus()}"/> <br>
+
+<div th:each="product : ${atcart}" >
+  <h1>Name: </h1>  <h1 th:text = "${product.getKey().name}"/>
+    <h2>Count: </h2> <h2 th:text = "${product.getValue()}"/>
+    <a  th:href="'/user/cart/deleteproduct?id='+${product.getKey().id}">Delete one</a>
+    <a th:if = "${product.getValue()} > 1" th:href="'/user/cart/deleteallproducts?id='+${product.getKey().id}">Delete all</a>
+</div>
+
+<a th:href="'/user/cart/deletecart?id='+${cart.id}"> Clear cart</a>
+
+</div>
+
+<a href = "/"> Go Back </a>
+
+</body>
+</html>

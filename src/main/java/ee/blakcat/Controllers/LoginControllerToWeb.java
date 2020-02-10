@@ -25,25 +25,38 @@ public class LoginControllerToWeb {
 
 
 
-
+@GetMapping ("/logout")
+public String logout (HttpSession httpSession, Model model) {
+        User user = userService.findBySession(httpSession.getId());
+        if (user==null) {
+            model.addAttribute("error", "Dont logged in now");
+            return "error";
+        } else {
+            user.setSession(null);
+            userService.save(user);
+            httpSession.invalidate();
+            model.addAttribute("backlink", "/");
+            return "/redirect";
+        }
+}
 
     @GetMapping ("/loginpage")
     public String loginpage (HttpSession httpSession, Model model) {
         User user = userService.findBySession(httpSession.getId());
-        System.out.println(httpSession.getId());
     if (user!=null) {
         model.addAttribute("error", "Already logged in");
         return "/error";
     } else return "/loginpage";
     }
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public String login (@RequestParam ("login") String login, @RequestParam ("password") String password, Model model, HttpSession httpSession) {
         if (!loginService.login(login,password, httpSession)) {
             model.addAttribute("error", "Login or password wrong");
             return "/error";
         } else {
-return "index";
+            model.addAttribute("backlink", "/");
+return "/redirect";
         }
     }
 }

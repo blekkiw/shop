@@ -2,62 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6f208f1f-04d8-43b6-b266-f847ea2e5e96" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/CartController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/CartControllerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/LoginControllerToWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductControllerToWeb.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Cart.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/UserRole.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/CartRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/LoginService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/PaymentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/PaymentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/product/save.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/user/find.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/all.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/user/one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/StartAndMenuControllerToWeb.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/carts/all.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/carts/one.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/redirect.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/BaseController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/BaseController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/CartControllerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/CartControllerToWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/LoginControllerToWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/LoginControllerToWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductControllerToWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/ProductControllerToWeb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Controllers/UserControllerToWeb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Cart.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Cart.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/PaymentStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/ProcessStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Repositories/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseAbstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseAbstractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/BaseService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/getallusers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ee/blakcat/Services/CartServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/product/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/user/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/error.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/oneuser.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/one.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/user/save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/BaseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/BaseController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/product/one.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/product/one.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserControllerToWeb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Controllers/UserControllerToWeb.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/Product.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Repositories/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/BaseService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/BaseService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ee/blakcat/Services/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/getallusers.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +73,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/product" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates/carts" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -117,14 +87,15 @@
       <recent name="ee.blakcat.Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/carts" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates/product" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/templates/product" />
+      <recent name="$PROJECT_DIR$/src/main/resources/static/user" />
       <recent name="$PROJECT_DIR$/src/main/resources/templates" />
       <recent name="$PROJECT_DIR$/src/main/resources/static" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/user" />
-      <recent name="$PROJECT_DIR$/src/main/resources/static/product" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -192,13 +163,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578730768944</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login">
+      <created>1581149917593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1581149917593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />
     <MESSAGE value="12" />
-    <option name="LAST_COMMIT_MESSAGE" value="12" />
+    <MESSAGE value="login" />
+    <option name="LAST_COMMIT_MESSAGE" value="login" />
   </component>
   <component name="WindowStateProjectService">
     <state x="590" y="215" width="800" height="684" key="#Inspections" timestamp="1578688821843">
@@ -217,87 +196,88 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="453" y="211" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580846120309" />
-    <state x="803" y="272" width="374" height="633" key="#com.intellij.ide.util.MemberChooser" timestamp="1581148761161">
+    <state x="803" y="272" width="544" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1581278174967">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="803" y="272" width="544" height="590" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022007796" />
-    <state x="803" y="272" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1581148761161" />
-    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580927900473">
+    <state x="803" y="272" width="544" height="597" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581278174967" />
+    <state x="803" y="272" width="374" height="633" key="#com.intellij.ide.util.MemberChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1581242259627" />
+    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581274755295">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580927900473" />
+    <state x="70" y="27" width="1304" height="1053" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581274755295" />
     <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580583377943">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="728" y="302" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580583377943" />
-    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2" timestamp="1578730768872">
+    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2" timestamp="1581149917383">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1578730768872" />
+    <state x="601" y="148" width="777" height="817" key="CommitChangelistDialog2/70.27.1850.1053@70.27.1850.1053" timestamp="1581149917383" />
     <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl" timestamp="1578739448854">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="778" y="311" width="424" height="491" key="FileChooserDialogImpl/70.27.1850.1053@70.27.1850.1053" timestamp="1578739448854" />
-    <state width="1804" height="297" key="GridCell.Tab.0.bottom" timestamp="1581148984024">
+    <state width="1804" height="297" key="GridCell.Tab.0.bottom" timestamp="1581364188353">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661765" />
-    <state width="1804" height="297" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1581148984024" />
-    <state width="1804" height="297" key="GridCell.Tab.0.center" timestamp="1581148984023">
+    <state width="1804" height="297" key="GridCell.Tab.0.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581364188353" />
+    <state width="1804" height="297" key="GridCell.Tab.0.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1581257042773" />
+    <state width="1804" height="297" key="GridCell.Tab.0.center" timestamp="1581364188353">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661765" />
-    <state width="1804" height="297" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1581148984023" />
-    <state width="1804" height="297" key="GridCell.Tab.0.left" timestamp="1581148984023">
+    <state width="1804" height="297" key="GridCell.Tab.0.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581364188353" />
+    <state width="1804" height="297" key="GridCell.Tab.0.center/70.27.1850.1053@70.27.1850.1053" timestamp="1581257042773" />
+    <state width="1804" height="297" key="GridCell.Tab.0.left" timestamp="1581364188353">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661765" />
-    <state width="1804" height="297" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1581148984023" />
-    <state width="1804" height="297" key="GridCell.Tab.0.right" timestamp="1581148984024">
+    <state width="1804" height="297" key="GridCell.Tab.0.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581364188353" />
+    <state width="1804" height="297" key="GridCell.Tab.0.left/70.27.1850.1053@70.27.1850.1053" timestamp="1581257042772" />
+    <state width="1804" height="297" key="GridCell.Tab.0.right" timestamp="1581364188353">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.0.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661765" />
-    <state width="1804" height="297" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1581148984024" />
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1581022661766">
+    <state width="1804" height="297" key="GridCell.Tab.0.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581364188353" />
+    <state width="1804" height="297" key="GridCell.Tab.0.right/70.27.1850.1053@70.27.1850.1053" timestamp="1581257042773" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom" timestamp="1581280459171">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661766" />
-    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1581022661766">
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581280459171" />
+    <state width="1804" height="340" key="GridCell.Tab.1.bottom/70.27.1850.1053@70.27.1850.1053" timestamp="1581152297903" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center" timestamp="1581280459171">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661766" />
-    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1581022661766">
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581280459171" />
+    <state width="1804" height="340" key="GridCell.Tab.1.center/70.27.1850.1053@70.27.1850.1053" timestamp="1581152297903" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left" timestamp="1581280459171">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661766" />
-    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
-    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1581022661766">
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581280459171" />
+    <state width="1804" height="340" key="GridCell.Tab.1.left/70.27.1850.1053@70.27.1850.1053" timestamp="1581152297903" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right" timestamp="1581280459171">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581022661766" />
-    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1578729362406" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1581280459171" />
+    <state width="1804" height="340" key="GridCell.Tab.1.right/70.27.1850.1053@70.27.1850.1053" timestamp="1581152297903" />
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor" timestamp="1580845938432">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="484" y="188" width="1022" height="737" key="SettingsEditor/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580845938432" />
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1578730773144">
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1581149920565">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1578730773144" />
+    <state x="590" y="289" width="800" height="535" key="Vcs.Push.Dialog.v2/70.27.1850.1053@70.27.1850.1053" timestamp="1581149920565" />
     <state x="616" y="193" width="748" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1580576407068">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="616" y="193" width="748" height="728" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580576407068" />
-    <state x="304" y="252" width="1372" height="610" key="new project wizard" timestamp="1578726100434">
+    <state x="304" y="252" width="1372" height="610" key="new project wizard" timestamp="1581152292309">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
-    <state x="304" y="252" width="1372" height="610" key="new project wizard/70.27.1850.1053@70.27.1850.1053" timestamp="1578726100434" />
-    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1580577511873">
+    <state x="304" y="252" width="1372" height="610" key="new project wizard/70.27.1850.1053@70.27.1850.1053" timestamp="1581152292309" />
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup" timestamp="1581151660522">
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053/70.27.1850.1053@70.27.1850.1053" timestamp="1580577511873" />
+    <state x="659" y="252" width="672" height="677" key="run.anything.popup/70.27.1850.1053@70.27.1850.1053" timestamp="1581151660522" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/shop$Main.ic" NAME="Main Coverage Results" MODIFIED="1581148983959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

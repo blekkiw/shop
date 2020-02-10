@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+
     <meta charset="UTF-8">
     <title> Welcome!</title>
     <link rel="stylesheet" href="/css/style.css">
   
 </head>
 <body>
-<h1>WTFF</h1>
-  <a href="user/save.html">New user</a>
+<h1>Shop</h1>
+<div th:if = "${admin} eq true">
+
    <a href="user/all">All users</a>
     <a href="user/find.html">Find users</a>
-    <a href="product/save.html">New product</a>
+    <a href="product/add">New product</a>
+</div>
+
     <a href="product/all">All products</a>
+<div th:if = "${loggedIn} eq false">
 <a href="/loginpage">Login</a>
+    <a href="user/add.html">Register</a>
+</div>
+<div th:if = "${loggedIn} eq true" >
+    <a href="/user/cart"> You Cart</a>
+    <a href="/logout">Logout</a>
+</div>
     <br>
 </body>
 </html>

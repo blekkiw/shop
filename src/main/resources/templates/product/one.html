@@ -8,6 +8,8 @@
 <h1 th:text = "${product.name}"/> <br>
 <h2 th:text = "${product.price}"/> <br>
 <h3 th:text = "${product.description}"/>
+<a th:href="'/cart/add?productId='+${product.id}">Add to Cart</a>
+<a href = "/"> Go Back </a>
 
 </body>
 </html>

@@ -1,9 +1,8 @@
 package ee.blakcat.Models;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.UUID;
 @Table (name = "user_data")
 @Entity
@@ -16,7 +15,8 @@ public class User {
     private Status status;
     private UserRole userRole;
     private String session;
-
+    @OneToMany (cascade = CascadeType.ALL, targetEntity = Cart.class)
+private List <Cart> carts;
 
 
     public void setSession(String session) {
@@ -31,6 +31,7 @@ public class User {
         this.address = address;
         this.userRole= UserRole.CUSTOMER;
         this.status= Status.ACTIVE;
+        this.carts =new ArrayList<>();
     }
 
     public User(String login, String password, String nameSurname, String address){
@@ -41,9 +42,23 @@ public class User {
         this.address = address;
         this.userRole=UserRole.CUSTOMER;
 this.status=Status.ACTIVE;
+        this.carts =new ArrayList<>();
     }
 
     public User() {
+    }
+
+    public List<Cart> getCarts() {
+        return carts;
+    }
+
+    public void setCarts(List<Cart> cart) {
+        this.carts = cart;
+    }
+
+    public Cart getActiveCart () {
+        if (carts.isEmpty()) carts.add(new Cart(this));
+      return carts.stream().findFirst().filter(cart -> cart.getProcessStatus()==ProcessStatus.ACTIVE).get();
     }
 
     public Status getStatus() {
@@ -111,7 +126,6 @@ this.status=Status.ACTIVE;
     public String toString() {
         return "User{" +
                 "login='" + login + '\'' +
-                ", password='" + password + '\'' +
                 ", nameSurname='" + nameSurname + '\'' +
                 ", id='" + id + '\'' +
                 ", address='" + address + '\'' +
