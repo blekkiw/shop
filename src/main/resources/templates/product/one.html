@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+<head th:insert="/header.html :: head">
 </head>
 <body>
+<nav th:insert="/header.html :: nav"/>
 <h1 th:text = "${product.name}"/> <br>
 <h2 th:text = "${product.price}"/> <br>
 <h3 th:text = "${product.description}"/>
-<a th:href="'/cart/add?productId='+${product.id}">Add to Cart</a>
-<a href = "/"> Go Back </a>
+<a th:if = "${product.isActive()}" th:href="'/cart/add?productId='+${product.id}">Add to Cart</a>
+<div th:if = "${product.isActive()}">
+<h4> Products available: </h4> <h4 th:text="${product.getCountAvailable()}"></h4> </div>
+<span th:if = "${!product.isActive()}">Product unavailable</span>
+<div th:if = "${admin}">
+<form name="addordelete" id="addordelete">
+    <label for="count">count: </label> <input id="count" name="count" type="text"> </br>
+    </br>
+    <label hidden for="id">name: </label> <input hidden id="id" name="id" type="id" th:value="${product.id}"> </br>
+    </br>
+    <button form="addordelete" formaction="/product/income" formmethod="post" type="submit" value="income"> Income </button>
+    <button form="addordelete" formaction="/product/outcome" formmethod="post" type="submit" value="outcome"> Outcome </button>
+</form>
+</div>
+
+<a th:href = "${backlink}"> Go Back </a>
 
 </body>
 </html>

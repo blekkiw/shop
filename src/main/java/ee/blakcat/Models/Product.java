@@ -48,17 +48,21 @@ public class Product {
     public Product() {
     }
 
-public void added () {
+public void inCome () {
         countAvailable++;
         if (countAvailable>0) {
             status=Status.ACTIVE;
         }
 }
-public void removed () {
+public void outCome () {
         countAvailable--;
         if (countAvailable<=0) {
             status=Status.LOCKED;
         }
+}
+
+public boolean isActive () {
+    return status == Status.ACTIVE;
 }
 
     public int getCountAvailable() {

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="/header.html :: head">
+</head>
+<body>
+<nav th:insert="/header.html :: nav"/>
     <title> Login Page</title>
     <form action="/login" method="post">
         <label for="login">login: </label> <input id="login" name="login" type="text"> </br>
         <label for="password">password: </label> <input id="password" name="password" type="password"></br>
         <input type="submit" value="Login">
     </form>
-</head>
-<body>
-
 </body>
 </html>

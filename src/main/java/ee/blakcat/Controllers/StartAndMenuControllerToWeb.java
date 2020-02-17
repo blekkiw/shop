@@ -20,9 +20,14 @@ public class StartAndMenuControllerToWeb {
         this.userService = userService;
     }
 
+    //TODO доделать завтра верстку, ПЕРЕДЕЛАТЬКАТЕГОРИИИИИИИИИИИИИ
+    // корзин Ё
+
+
     @GetMapping("/")
     public String homePage(HttpSession httpSession, Model model) {
         User user = userService.findBySession(httpSession.getId());
+        httpSession.setAttribute("previous", "/");
         if (user != null) {
             model.addAttribute("loggedIn", true);
             if (user.getUserRole() == UserRole.ADMINISTRATOR) {
@@ -31,7 +36,7 @@ public class StartAndMenuControllerToWeb {
         } else
             model.addAttribute("loggedIn", false);
 
-
+model.addAttribute("title", "Main page");
         return "index";
     }
 

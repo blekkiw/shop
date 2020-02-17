@@ -31,7 +31,7 @@ public UserService userService;
 
     @GetMapping ("/user/findid")
     @Override
-    public String findById(@RequestParam ("id") String s, Model model) {
+    public String findById(@RequestParam ("id") String s, Model model, HttpSession httpSession) {
     User user = userService.findById(s);
     model.addAttribute("user", user);
         return "user/one";
@@ -39,11 +39,11 @@ public UserService userService;
 
     @PostMapping ("user/save")
     public String save (@RequestParam ("login") String login, @RequestParam ("password") String password, @RequestParam ("nameSurname") String nameSurname,
-           @RequestParam ("address") String address , Model model) {
+           @RequestParam ("address") String address , Model model, HttpSession httpSession) {
     User user = new User(login,password,nameSurname,address);
     userService.save(user);
     model.addAttribute("user", user);
-        return findById(user.getId(), model);
+        return findById(user.getId(), model, httpSession);
     }
 
     @RequestMapping("user/all")

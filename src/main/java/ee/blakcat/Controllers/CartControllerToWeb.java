@@ -40,22 +40,20 @@ public class CartControllerToWeb implements CartController {
 
 
     @Override
-    public String findById(String s, Model model) {
+    public String findById(String s, Model model, HttpSession httpSession) {
         Cart cart = cartService.findById(s);
         model.addAttribute("cart", cart);
         return "/cart/one";
     }
 
     @GetMapping ("/cart/add")
-    public String add (Model model, @RequestParam ("productId")String productId, HttpSession httpSession) {
+    public String addProductToCart (Model model, @RequestParam ("productId")String productId, HttpSession httpSession) {
         User user = userService.findBySession(httpSession.getId());
-        Product product = productService.findById(productId);
         if (user==null) {
             model.addAttribute("error", "Please login an try again");
             return "/error";
         } else {
-           cartService.addProductToCart (user, product);
-           userService.save(user);
+           cartService.addProductToCart (user, productId);
             model.addAttribute("backlink", "/product/find?id="+productId);
             return "/redirect";
         }
@@ -65,33 +63,39 @@ public class CartControllerToWeb implements CartController {
     @GetMapping ("/user/cart/deleteproduct")
     public String deleteFromCart (Model model, HttpSession httpSession, @RequestParam ("id") String id) {
         User user = userService.findBySession(httpSession.getId());
-        Cart cart = user.getActiveCart();
-        cart.delete(productService.findById(id));
-        userService.save(user);
-        model.addAttribute("backlink", "/user/cart");
-        return "/redirect";
+        if (cartService.deleteFromCart(user, id)) {
+            model.addAttribute("backlink", "/user/cart");
+            return "/redirect";}
+        else  {
+            model.addAttribute("error", "Something gone wrong");
+            return "/error";
+        }
     }
 
     @GetMapping ("/user/cart/deleteallproducts")
     public String deleteAllProductFromCart (Model model, HttpSession httpSession, @RequestParam ("id") String id) {
         User user = userService.findBySession(httpSession.getId());
-        Cart cart = user.getActiveCart();
-        Product productForDelete = productService.findById(id);
-        List<Product> products = cart.getProducts();
-        products.removeIf(product -> product.equals(productForDelete));
-        userService.save(user);
+        if (cartService.deleteAllProductFromCart(user, id)) {
         model.addAttribute("backlink", "/user/cart");
-        return "/redirect";
+        return "/redirect";}
+        else  {
+            model.addAttribute("error", "Something gone wrong");
+            return "/error";
+        }
     }
+
+
 
     @GetMapping ("/user/cart/deletecart")
     public String deleteCart (Model model, HttpSession httpSession, @RequestParam ("id") String id) {
         User user = userService.findBySession(httpSession.getId());
-        List <Cart> carts = user.getCarts();
-        carts.remove(user.getActiveCart());
-        userService.save(user);
-        model.addAttribute("backlink", "/user/cart");
-        return "/redirect";
+     if (cartService.deleteCart(user,id)) {
+         model.addAttribute("backlink", "/user/cart");
+         return "/redirect";
+     } else  {
+         model.addAttribute("error", "Something gone wrong");
+         return "/error";
+     }
     }
 
 

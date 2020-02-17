@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-
-    <meta charset="UTF-8">
-    <title> Welcome!</title>
-    <link rel="stylesheet" href="/css/style.css">
-  
+<head th:insert="/header.html :: head">
 </head>
 <body>
+<nav th:insert="/header.html :: nav"/>
 <h1>Shop</h1>
 <div th:if = "${admin} eq true">
 
@@ -26,5 +22,6 @@
     <a href="/logout">Logout</a>
 </div>
     <br>
+
 </body>
 </html>

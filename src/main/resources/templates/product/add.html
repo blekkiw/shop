@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title> Save product</title>
-    <form action="/product/save" method="post">
-        <label for="name">name: </label> <input id="name" name="name" type="text"> </br>
-        <label for="price">price: </label> <input id="price" name="price" type=""></br>
-        <label for="description">Description: </label> <input id="description" name="description" type="text"> </br>
-        <label for="count">Count: </label> <input id="count" name="count" type="text"> </br>
-
-
-        <label for="category">Category: </label>  </br>
-        <select  id="category" name="category">
-            <option th:each="category : ${categories}" th:value="${category}" th:text="${category.name}">
-            </option>
-        </select>
-
-
-
-
-        </br>
-        <input type="submit" value="Save">
-    </form>
+<head th:insert="/header.html :: head">
 </head>
 <body>
+<nav th:insert="/header.html :: nav"/>
+<form action="/product/save" method="post">
+    <label for="name">name: </label> <input id="name" name="name" type="text"> </br>
+    <label for="price">price: </label> <input id="price" name="price" type=""></br>
+    <label for="description">Description: </label> <input id="description" name="description" type="text"> </br>
+    <label for="count">Count: </label> <input id="count" name="count" type="text"> </br>
 
+
+    <label for="category">Category: </label>  </br>
+    <select  id="category" name="category">
+        <option th:each="category : ${categories}" th:value="${category}" th:text="${category.name}">
+        </option>
+    </select>
+
+    </br>
+    <input type="submit" value="Save">
+</form>
+<a th:href = "${backlink}"> Go Back </a>
 </body>
 </html>

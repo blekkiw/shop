@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <title>Cart</title>
+<head th:insert="/header.html :: head">
 </head>
 <body>
+<nav th:insert="/header.html :: nav"/>
 <h1 th:if = "${cart.isEmpty()}">Nothing here now....</h1>
 <div th:if = "${!cart.isEmpty()}">
 <h1>Status: </h1><h1 th:text = "${cart.processStatus}"/> <br>
@@ -20,8 +19,7 @@
 <a th:href="'/user/cart/deletecart?id='+${cart.id}"> Clear cart</a>
 
 </div>
-
-<a href = "/"> Go Back </a>
+<a th:href = "${backlink}"> Go Back </a>
 
 </body>
 </html>
